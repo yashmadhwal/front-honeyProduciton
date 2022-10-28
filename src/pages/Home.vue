@@ -17,11 +17,11 @@
       </div>
 
       <!-- Search Bar -->
-      <div class="grid grid place-content-center w-full ">
+      <div class="grid grid place-content-center h-full w-full">
         <form class="flex justify-around">
           <input
-            class="border-2 h-[40px] p-[10px] rounded-[12px] hover:border-[#eb2f88] focus:outline-none focus:border-[#eb2f88]"
-            placeholder="Enter Bird Id" pattern="\d*" maxlength="4" v-model="id" required>
+            class="border-2 h-[40px] w-[250px] p-[10px] rounded-[12px] hover:border-[#eb2f88] focus:outline-none focus:border-[#eb2f88] text-center font-Amatic tracking-[3px]"
+            placeholder="Enter Honey Id" pattern="\d*" maxlength="4" v-model="id" required>
           <router-link :to="`/Demo/${id}`">
             <button
               class="border-2 w-[70px] rounded-[12px] h-[40px] tracking-[.2em] text-[#ffffff] bg-[#eb2f88] hover:bg-[#b02465] grid place-content-center"
@@ -46,7 +46,7 @@ export default {
 </script>
 
 <style>
-* {
+div {
   border: 1px solid black;
 }
 
